@@ -1,0 +1,38 @@
+.tags {
+  padding: 0;
+  display: flex;
+  list-style: none;
+
+  &__item {
+    padding: 3px 5px;
+
+  }
+
+  &__button {
+    padding: 5px 15px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #085fff;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(#000, 0.3);
+
+    &:active {
+      opacity: .8;
+    }
+
+    &.current {
+      background: #ddd;
+      color: #000;
+      cursor: default;
+
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+}
