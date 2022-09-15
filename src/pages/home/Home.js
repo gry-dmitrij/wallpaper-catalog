@@ -20,7 +20,6 @@ export function Home() {
         }
         const document = window.document.documentElement;
         if (document.scrollHeight - document.scrollTop - document.clientHeight < 500) {
-            console.log('onScroll set fetch more')
             setFetchMore(true)
         }
     }, [fetchMore, loading])
